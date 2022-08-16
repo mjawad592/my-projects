@@ -70,6 +70,26 @@
 
         }
 
+        .header-dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            margin: 40px 0px 0px 0px;
+        }
+
+        .header-dropdown-content a {
+            display: block;
+            background-color: white;
+            min-width: 150%;
+            margin: 0px 0px 0px 0px;
+            padding: 10px 0px 10px 10px;
+            opacity: 90%;
+        }
+
+        .header-dropdown:hover .header-dropdown-content {
+            display: block;
+        }
+        
         #header-contact-us {
             padding: 15px 40px 15px 40px;
             margin: 0px 0px 0px 30px;
@@ -271,7 +291,15 @@
                 <a id="header-home-a" href="">HOME</a>
             </li>
             <li id="header-about-us">
-                <a href="">ABOUT US</a>
+                <div class="header-dropdown">
+                    <a href="" class="header-dropbtn">ABOUT US</a>
+                    <div class="header-dropdown-content">
+                        <a href="#">1. Menu Item #1</a>
+                        <a href="#">2. Menu Item #2</a>
+                        <a href="#">3. Menu Item #3</a>
+                        <a href="#">4. Menu Item #4</a>
+                    </div>
+                </div>
             </li>
             <li id="header-contact-us">
                 <a href="">CONTACT US</a>
