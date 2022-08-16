@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <meta title="Task3 - CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta>
+
+    <style>
+        * {
+            border: 0px solid black;
+            font-family: Montserrat;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .header-logo {
+            display: inline-block;
+            padding: 0px 0px 0px 0px;
+            margin: 70px 0px 0px 60px;
+        }
+
+        .header-ul {
+            list-style-type: none;
+            display: inline-block;
+            padding: 0px 0px 0px 0px;
+            position: relative;
+            top: -4.2em;
+            margin: 0px 0px 30px 720px;
+        }
+
+        li {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 6px;
+            background-color: #D9D9D9;
+            margin: 0px 0px 0px 30px;
+        }
+
+        li #header-home-a {
+            color: white;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #header-home {
+            padding: 15px 60px 15px 60px;
+            color: white;
+            background-color: #06C0CC;
+
+        }
+
+        #header-about-us {
+            padding: 15px 50px 15px 50px;
+            margin: 0px 0px 0px 30px;
+
+        }
+
+        #header-contact-us {
+            padding: 15px 40px 15px 40px;
+            margin: 0px 0px 0px 30px;
+        }
+
+        .img-with-txt {
+            position: relative;
+        }
+
+        .img-sec2 {
+            width: 100%;
+        }
+
+        .img-txt-sec2 {
+            font-size: 40px;
+            font-weight: 500;
+            color: white;
+            font-weight: 600;
+            position: absolute;
+            bottom: 100px;
+            right: 75px;
+            letter-spacing: 1px;
+        }
+
+        .image-gallery {}
+
+        .img-gallery-txt {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 0px;
+            padding: 30px 0px 10px 60px;
+            margin: 40px 0px 10px 0px;
+        }
+
+        .images {}
+
+        .img {
+            display: inline-block;
+            margin: 15px 0px 0px 55px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .img-gallery-captions {
+            font-size: 22px;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 10px 0px 10px 0px;
+            margin: 0px 0px 30px 0px;
+        }
+
+        .contact-form {
+            background-color: #D9D9D9;
+            border-radius: 12px;
+            padding: 10px 0px 40px 0px;
+            margin: 40px 70px 20px 70px;
+        }
+
+        .contact-form-txt {
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 40px 0px 40px 0px;
+            text-align: center;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px 0px 10px 0px;
+            margin: 0px 80px 0px 60px;
+        }
+
+
+        ::placeholder {
+            color: white;
+            width: 500px;
+            font-size: 18px;
+        }
+
+        .form-input {
+            display: block;
+            text-align: left;
+            background-color: #000000;
+            padding: 20px 1040px 20px 20px;
+            margin: 0px 0px 30px 60px;
+            border-radius: 8px;
+        }
+
+        .form-button-div {
+            text-align: center;
+            margin: 80px 0px 20px 0px;
+        }
+
+        .form-button {
+            color: white;
+            background-color: #06C0CC;
+            padding: 20px 80px 20px 80px;
+            font-size: 20px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .boxes-game-div {
+            margin: 0px 0px 160px 0px;
+        }
+
+        .boxes-game-txt {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 0px;
+            padding: 30px 0px 10px 60px;
+            margin: 20px 0px 30px 30px;
+        }
+
+        .boxes-game-container {
+            position: relative;
+            background-color: #D9D9D9;
+            border-radius: 12px;
+            padding: 80px 0px 650px 0px;
+            margin: 40px 70px 20px 70px;
+        }
+        #green {
+            position: absolute;
+            left: 26em;
+            z-index: 3;
+            
+        }
+        #red {
+            position: absolute;
+            left: 40em;
+            top: 9em;
+            z-index: 2;
+        }
+        #blue {
+            position: absolute;
+            left:  30em;
+            top: 18em;
+            z-index: 1;
+        }
+        .footer {
+            background-color: #D9D9D9;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 0px 0px 50px 0px;
+        }
+
+        .footer-left {
+            display: inline-block;
+            width: 50%
+        }
+
+        .footer-logo {
+            margin: 10px 0px 0px 60px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .footer-txt {
+            width: 90%;
+            margin: 0px 0px 0px 60px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .footer-right {
+            margin: 10px 0px 0px 60px;
+            display: inline-block;
+            float: right;
+        }
+
+        .footer-table {
+
+            text-align: left;
+            margin: 10px 0px 0px 0px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        th,
+        td {
+            margin: 0px 0px 0px 0px;
+            padding: 10px 40px 5px 10px;
+        }
+
+        td {
+            opacity: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span class="header-logo">
+            <img src="./applelogogroup.svg">
+        </span>
+
+        <ul class="header-ul">
+            <li id="header-home">
+                <a id="header-home-a" href="">HOME</a>
+            </li>
+            <li id="header-about-us">
+                <a href="">ABOUT US</a>
+            </li>
+            <li id="header-contact-us">
+                <a href="">CONTACT US</a>
+            </li>
+        </ul>
+    </header>
+
+    <!--2ND Section starts here-->
+
+    <div class="img-with-txt">
+        <img class="img-sec2" src="./computerimg.svg">
+        <p class="img-txt-sec2">TEAM ALIF</p>
+    </div>
+
+    <!--3rd Section -Images Gallery- starts here-->
+
+    <div class="image-gallery">
+        <p class="img-gallery-txt">IMAGE GALLERY</p>
+        <div class="images">
+            <div class="img">
+                <img src="./cluster.svg">
+                <figcaption class="img-gallery-captions">Cluster</figcaption>
+            </div>
+            <div class="img">
+                <img src="./newyork.svg">
+                <figcaption class="img-gallery-captions">New York</figcaption>
+            </div>
+            <div class="img">
+                <img src="./pizza.svg">
+                <figcaption class="img-gallery-captions">Pizza</figcaption>
+            </div>
+        </div>
+    </div>
+
+    <!--4th Section -Contact Form- starts here-->
+
+    <div class="contact-form">
+        <p class="contact-form-txt">CONTACT FORM</p>
+        <form>
+            <label class="form-label">
+                Email:
+            </label>
+            <input class="form-input" type="text" placeholder="example321@gmail.com">
+
+
+            <label class="form-label">
+                Password:
+            </label>
+            <input class="form-input" type="password" placeholder="*************">
+        </form>
+        <div class="form-button-div">
+            <form>
+                <input class="form-button" type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+
+    <!--5th Section -Boxes Game- starts here-->
+
+    <div class="boxes-game-div">
+        <p class="boxes-game-txt">BOXES GAME</p>
+        <div class="boxes-game-container">
+            <img  id="green" src="./green.svg">
+            <img  id="red" src="red.svg">
+            <img  id="blue" src="./blue.svg">
+        </div>
+    </div>
+
+        <!--6th Section -Footer- starts here-->
+
+        <div class="footer">
+            <div class="footer-left">
+                <img class="footer-logo" src="./applelogogroup.svg">
+                <p class="footer-txt">Apple Inc. is an American multinational technology company that
+                    specializes in consumer electronics, software and online services
+                    headquartered in Cupertino, California, United States</p>
+            </div>
+
+            <div class="footer-right">
+                <table class="footer-table">
+                    <tr>
+                        <th>Product</th>
+                        <th>Address</th>
+                        <th>Links</th>
+                    </tr>
+
+                    <tr>
+                        <td>Theme Design</td>
+                        <td>Theme Design</td>
+                        <td>Theme Design</td>
+                    </tr>
+
+                    <tr>
+                        <td>Plugin Design</td>
+                        <td>Plugin Design</td>
+                        <td>Plugin Design</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wordpress</td>
+                        <td>Wordpress</td>
+                        <td>Wordpress</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+</body>
+
+</html>
