@@ -1,0 +1,338 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0.5px black solid;
+    font-family: Montserrat;
+}
+
+div {
+    display: flex;
+}
+
+.header-div {
+    justify-content: space-between;
+    margin: 70px 75px 100px 60px;
+}
+
+.header-logo {
+    height: auto;
+}
+
+.header-btns-div {
+    width: 50%;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-btns {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    background-color: #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.header-btns:hover {
+    background-color: #06C0CC;
+    color: whitesmoke;
+    transition: all 0.2s ease 0s;
+}
+
+.dropdown-btns:hover.dropdown-btns{
+    background-color: #06C0CC;
+}
+
+.header-btn-home {
+    padding: 16px 65px 16px 65px;
+}
+
+.header-btn-about {
+    padding: 16px 45px 16px 45px;
+
+}
+
+.header-btn-contact {
+    padding: 16px 45px 16px 45px;
+
+}
+
+.dropdown-list-div {
+    position: absolute;
+    top: 3.5em;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    padding: 5px 0px 0px 0px;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+
+.dropdown-header-btn {
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.dropdown-btns {
+    color: black;
+    padding: 16px 27px 16px 27px;
+    background-color: #d9d9d9;
+    text-decoration: none;
+}
+
+.dropdown-header-btn:hover .dropdown-list-div {
+    display: flex;
+}
+
+.dropdown-btns:hover .dropdown-list-div {
+    display: flex;
+}
+
+
+#dropdown-4th-button {
+    border-radius: 0px 0px 6px 6px;
+}
+
+#dropdown-4th-button:hover #dropdown-4th-button {
+    background-color: aqua;
+}
+
+/*--------Image starts here-------- */
+
+.img-with-txt {
+    position: relative;
+}
+
+.img-sec2 {
+
+    width: 100%;
+}
+
+.txt-sec2 {
+    position: absolute;
+    bottom: 2.5em;
+    right: 2.2em;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: white;
+}
+
+/* --------- Gallery starts here --------- */
+
+.image-gallery-div {
+    flex-direction: column;
+    margin: 0px  0px  40px  0px;
+}
+
+.gallery-txt  {
+    margin: 80px  55px  40px  55px;
+    padding: 0px 0px 0px 20px;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+ 
+.gallery-images {
+    justify-content: space-between;
+    margin: 0px  65px  0px  65px;
+    
+}
+
+.gallery-img {
+    box-shadow: 6px 6px 12px #d9d9d9;
+    border-radius: 40px;
+
+}
+
+.gallery-img-figcaption {
+    flex-direction: column;
+}
+
+figcaption {
+    text-align: center;
+    padding: 30px 0px  20px 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* --------- Form starts here ----------- */
+
+.form-section {
+    flex-direction: column;
+    background-color: #d9d9d9;
+    border-radius: 14px;
+    padding: 0px 0px 20px 0px;
+    margin: 100px  65px  0px  65px;
+}
+
+.form-heading {
+
+    justify-content: center;
+    align-items: center;
+    margin: 40px  0px 30px 0px;
+    font-size: 34px;
+    font-weight: 600;
+}
+.form-pair-box {
+    flex-direction: column;
+    margin: 0px  40px 0px 40px;
+}
+.form-label {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px 0px 20px 0px;
+}
+.form-input {
+    color: white;
+    background-color: black;
+    padding: 20px 0px 20px 20px;
+    border-radius: 8px;
+}
+
+.form-btn-div {
+    justify-content: center;
+    align-items: center;
+    margin: 0px  40px 0px 40px;
+    padding: 60px 0px 40px 0px;
+}
+
+.form-btn {
+    background-color: black;
+    opacity: 90%;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    padding: 12px 65px 12px 65px;
+}
+
+.form-btn:hover {
+    background-color: #06C0CC;;
+}
+
+::placeholder {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* --------- Box Games starts here --------- */
+
+.boxgame-section{
+    flex-direction: column;
+    margin: 30px  65px  0px  65px;
+}
+
+.boxgame-container {
+    position: relative;
+    background-color: #d9d9d9;
+    border-radius: 14px;
+    padding: 80px 0px 600px 0px;
+
+}
+.boxgame-txt {
+    padding: 0px 0px 0px 0px;
+    margin: 30px  0px  50px  10px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.box-green {
+    position: absolute;
+    top:  6em;
+    left: 26em;
+    z-index: 3;
+    transition: all  0.2s ease 0s;
+}
+
+.box-red {
+    position: absolute;
+    top:  10em;
+    left: 39em;
+    z-index: 2;
+    transition: all  0.2s ease 0s;
+}
+
+.box-blue {
+    position: absolute;
+    top:  20em;
+    left: 28em;
+    z-index: 1;
+    transition: all  0.2s ease 0s;
+}
+
+.box-green:hover.box-green {
+    top:  5em;
+    left: 27em;
+    transition: all  0.2s ease 0s;
+}
+
+.box-red:hover.box-red {
+    top:  9em;
+    left: 40em;
+    transition: all  0.2s ease 0s;
+}
+.box-blue:hover.box-blue {
+    top:  21em;
+    left: 27em;
+    transition: all  0.2s ease 0s;
+}
+/* -------- footer Section starts here ------ */
+
+.footer {
+    flex-direction: row;
+    margin: 160px  0px  0px  0px;
+    padding: 40px 30px 60px 20px;
+    background-color: #d9d9d9;
+}
+.left-ft{
+    flex-direction: column;
+    width: 50%;
+    margin: 0px  0px  0px  0px;
+    padding: 0px  0px  0px  50px;
+}
+
+.left-ft-logo {
+    margin: 0px  0px  20px  0px;
+}
+
+.left-ft-txt {
+    font-weight: 600;
+}
+
+.right-ft {
+    flex-direction: row;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.right-ft-coloums {
+    flex-direction: column;
+    padding: 0px 0px 0px 40px;
+    /* align-items: stretch; */
+    align-content: space-between;
+}
+
+#right-ft-bold-row {
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 100%;
+    text-align: ;
+    padding: 8px 20px 18px 20px;
+}
+
+.right-ft a  {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    opacity: 90%;
+    padding: 8px 10px 8px 20px;
+}
